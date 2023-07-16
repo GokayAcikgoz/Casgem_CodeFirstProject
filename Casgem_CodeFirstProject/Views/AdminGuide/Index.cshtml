@@ -1,7 +1,7 @@
 ﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Guide>
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Admin/Index.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <h2>Rehber İşlemleri</h2>
@@ -13,8 +13,8 @@
         <th>Sil</th>
         <th>Güncelle</th>
     </tr>
-    @foreach(var item in Model)
-            {
+    @foreach (var item in Model)
+    {
         <tr>
             <td>@item.GuideID</td>
             <td>@item.GuideName</td>

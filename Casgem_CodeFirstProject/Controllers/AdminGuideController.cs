@@ -28,6 +28,12 @@ namespace Casgem_CodeFirstProject.Controllers
         public ActionResult AddGuide(Guide p)
         {
             travelContext.Guides.Add(p);
+
+            foreach (var socialMedia in p.SocialMedia)
+            {
+                travelContext.SocialMedias.Add(socialMedia);
+            }
+
             travelContext.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -44,6 +50,7 @@ namespace Casgem_CodeFirstProject.Controllers
         public ActionResult UpdateGuide(int id) 
         {
             var value = travelContext.Guides.Find(id);
+
             return View(value);
         }
 
@@ -52,11 +59,16 @@ namespace Casgem_CodeFirstProject.Controllers
         {
             var value = travelContext.Guides.Find(p.GuideID);
 
+
             value.GuideName = p.GuideName;
             value.GuideTitle = p.GuideTitle;
             value.ImageUrl = p.ImageUrl;
+            value.SocialMedia.Clear();
+            value.SocialMedia.AddRange(p.SocialMedia);
             travelContext.SaveChanges();
             return RedirectToAction("Index");
+
+
         }
     }
 }

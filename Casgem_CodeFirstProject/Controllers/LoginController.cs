@@ -31,7 +31,7 @@ namespace Casgem_CodeFirstProject.Controllers
             {
                 FormsAuthentication.SetAuthCookie(values.UserName, false);
                 Session["usertravel"] = values.UserName.ToString();
-                return RedirectToAction("Index", "AdminGuide");
+                return RedirectToAction("Index", "AdminHome");
             }else 
             {
                 return View(); 

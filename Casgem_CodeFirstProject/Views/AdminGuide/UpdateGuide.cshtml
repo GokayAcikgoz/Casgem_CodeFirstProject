@@ -1,7 +1,7 @@
 ﻿@model Casgem_CodeFirstProject.DAL.Entities.Guide
 @{
     ViewBag.Title = "UpdateGuide";
-    Layout = "~/Views/Admin/Index.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <h2>Rehber Güncelleme Sayfası</h2>
@@ -16,5 +16,6 @@
     @Html.Label("Rehber Fotoğraf Url")
     @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
     <br />
+    
     <button class="btn btn-success">Güncelle</button>
 </form>

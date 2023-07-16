@@ -1,7 +1,7 @@
 ﻿@model Casgem_CodeFirstProject.DAL.Entities.Guide
 @{
     ViewBag.Title = "AddGuide";
-    Layout = "~/Views/Admin/Index.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <h2>Yeni Kişi Ekleme Sayfası</h2>
@@ -15,6 +15,15 @@
     <br />
     @Html.Label("Rehber Fotoğraf Url")
     @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+    @Html.Label("Sosyal Medya Adı")
+    @Html.TextBoxFor(x => x.SocialMedia[0].SocialMediaName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Sosyal Medya Link")
+    @Html.TextBoxFor(x => x.SocialMedia[0].SocialMediaUrl, new { @class = "form-control" })
+    <br />
+    @Html.Label("Sosyal Medya Icon")
+    @Html.TextBoxFor(x => x.SocialMedia[0].Icon, new { @class = "form-control" })
     <br />
     <button class="btn btn-success">Ekle</button>
 </form>

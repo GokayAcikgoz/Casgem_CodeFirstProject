@@ -128,8 +128,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminAboutController.cs" />
+    <Compile Include="Controllers\AdminAboutMeController.cs" />
+    <Compile Include="Controllers\AdminContactController.cs" />
+    <Compile Include="Controllers\AdminGaleryController.cs" />
     <Compile Include="Controllers\AdminGuideController.cs" />
+    <Compile Include="Controllers\AdminHomeController.cs" />
+    <Compile Include="Controllers\AdminIletisimController.cs" />
+    <Compile Include="Controllers\AdminServiceController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
@@ -315,7 +321,6 @@
     <Content Include="Views\Default\PartialBookTravel.cshtml" />
     <Content Include="Views\Default\PartialFooter.cshtml" />
     <Content Include="Views\Default\PartialScript.cshtml" />
-    <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Templates\sidebar-03\.DS_Store" />
     <Content Include="Templates\sidebar-03\css\.DS_Store" />
     <Content Include="Templates\sidebar-03\css\bootstrap\.DS_Store" />
@@ -440,6 +445,17 @@
     <Content Include="Views\Explore\PartialService.cshtml" />
     <Content Include="Views\Explore\PartialImage.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\AdminHome\Index.cshtml" />
+    <Content Include="Views\AdminAbout\Index.cshtml" />
+    <Content Include="Views\AdminAbout\AdminAboutUpdate.cshtml" />
+    <Content Include="Views\AdminAboutMe\Index.cshtml" />
+    <Content Include="Views\AdminAboutMe\AdminAboutMeUpdate.cshtml" />
+    <Content Include="Views\AdminService\Index.cshtml" />
+    <Content Include="Views\AdminService\AddAdminService.cshtml" />
+    <Content Include="Views\AdminGalery\Index.cshtml" />
+    <Content Include="Views\AdminContact\Index.cshtml" />
+    <Content Include="Views\AdminIletisim\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
